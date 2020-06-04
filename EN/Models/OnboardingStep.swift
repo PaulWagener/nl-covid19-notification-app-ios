@@ -24,6 +24,9 @@ class OnboardingStep: NSObject {
         self.buttonTitle = buttonTitle
         self.isExample = isExample
 
+
+
+
         let attributedString = NSMutableAttributedString()
 
         let newLineAttributes: [NSAttributedString.Key: Any] = [.font: UIFont.systemFont(ofSize: 10)]
