@@ -18,6 +18,7 @@ class ENUnitTests: XCTestCase {
     }
 
     func testOnboardingSteps() throws {
+        // Harmless change
 
         let onboardingSteps = OnboardingManager.shared.onboardingSteps
 
