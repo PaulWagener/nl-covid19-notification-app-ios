@@ -19,7 +19,8 @@ class ENUnitTests: XCTestCase {
 
     func testOnboardingSteps() throws {
 
-        let onboardingSteps = OnboardingManager.shared.onboardingSteps
+        // Invoke linter warnings
+        let onboardingSteps = OnboardingManager.shared.onboardingSteps         
 
         for (index, onboardingStep) in onboardingSteps.enumerated() {
             XCTAssertTrue(onboardingStep.title == Localized("step\(index+1)Title"))
@@ -28,5 +29,9 @@ class ENUnitTests: XCTestCase {
             XCTAssertTrue(!onboardingStep.buttonTitle.isEmpty)
             XCTAssertTrue(onboardingStep.attributedText.length > 0)
         }
+    }
+
+    func testFail() throws {
+        XCTFail("Failing unit test")
     }
 }
